@@ -1,4 +1,4 @@
-fruits = ["apple", "watermenol" , "grapes"];
+fruits = ["apple", "watermenol", "grapes"];
 console.log("Original Array:");
 console.log(fruits);
 
@@ -27,13 +27,19 @@ console.log(fruits);
 
 //Removing the middle element
 console.log("Array after splice operation:")
-let removedElement = fruits.splice(1,1);
+let removedElement = fruits.splice(1, 1);
 console.log(fruits);
 
 fruits.push("Orange");
 fruits.push("Banana");
 fruits.push("Mango");
 console.log("Accessing an arry using Loop:")
-for(let i = 0; i < fruits.length; i++){
+for (let i = 0; i < fruits.length; i++) {
     console.log(fruits[i]);
 }
+
+//spread operator
+console.log(fruits);
+//spread operator - ...
+let newArray = [...fruits, "A", "B"];
+console.log(newArray);
